@@ -1,0 +1,16 @@
+[ARCC Information]
+  https://arcc.uwyo.edu
+  email us at arcc-info@uwyo.edu  
+
+[Learning Linux]
+  Linux Command Reference: https://ubuntudanmark.dk/filer/fwunixref.pdf
+  edX Intro to Linux: https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-0
+  
+  distrowatch: http://distrowatch.com/
+ 
+  YouTube Videos:
+    The Story of Linux: https://www.youtube.com/watch?v=5ocq6_3-nEw
+    How Linux is Built: https://www.youtube.com/watch?v=yVpbFMhOAwE
+
+[C programming]
+
