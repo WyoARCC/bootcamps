@@ -1,16 +1,29 @@
 [ARCC Information]
   https://arcc.uwyo.edu
-  email us at arcc-info@uwyo.edu  
+  General Information: email us at arcc-info@uwyo.edu
+  Service request: email arcc-help@uwyo.edu
 
 [Learning Linux]
-  Linux Command Reference: https://ubuntudanmark.dk/filer/fwunixref.pdf
-  edX Intro to Linux: https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-0
+  Linux Command Reference:		https://ubuntudanmark.dk/filer/fwunixref.pdf
+  edX Intro to Linux:			https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-0
   
-  distrowatch: http://distrowatch.com/
+  distrowatch:					http://distrowatch.com/
  
   YouTube Videos:
-    The Story of Linux: https://www.youtube.com/watch?v=5ocq6_3-nEw
-    How Linux is Built: https://www.youtube.com/watch?v=yVpbFMhOAwE
+    The Story of Linux:			https://www.youtube.com/watch?v=5ocq6_3-nEw
+    How Linux is Built:			https://www.youtube.com/watch?v=yVpbFMhOAwE
 
 [C programming]
 
+
+[OpenMP Programming]
+  Standards and basic links:    https://openmp.org/
+  Supported references:         https://openmp.org/wp/resources
+  Introduction slides by Intel: https://openmp.org/mp-documents/Intro_Tor_OpenMP_Mattson.pdf (Youtube videos available as well!)
+
+[OpenACC Programming]
+
+[Message Passing Interface (MPI)]
+  Standards:                    https://www.mpi-forum.org
+  ANL Guides:					https://www.mpich.org/documentation/guides
+  LLNL Tutorial:				https://computing.llnl.gov/tutorials/mpi/
