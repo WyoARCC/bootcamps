@@ -8,6 +8,7 @@
   edX Intro to Linux:			https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-0
   
   distrowatch:					http://distrowatch.com/
+  distrotimeline        https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg
  
   YouTube Videos:
     The Story of Linux:			https://www.youtube.com/watch?v=5ocq6_3-nEw
