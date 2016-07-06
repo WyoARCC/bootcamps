@@ -9,9 +9,11 @@ main(int argc, char *argv[]){
     int dest; //rank of the receiver
     int tag = 50; // tag for messages
     char message[100];   // storage for messages
+    int thd_lvl;
     MPI_Status status;  // return status for receive
+    
 
-    MPI_Init(&argc, &argv);
+    MPI_Init_thread(&argc, &argv, MPI_THREAD_SINGLE, &thd_lvl);
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
     MPI_Comm_size(MPI_COMM_WORLD, &p);
 
