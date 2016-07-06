@@ -13,9 +13,10 @@ int main(int argc,char *argv[]){
     int source,count;
     int buffer[100]; 
     int Total_Sum;
+    int thd_lvl;
     MPI_Status status;
  
-    MPI_Init(&argc,&argv);
+    MPI_Init_thread(&argc,&argv, MPI_THREAD_SINGLE, &thd_lvl);
     MPI_Comm_size(MPI_COMM_WORLD,&numprocs);
     MPI_Comm_rank(MPI_COMM_WORLD,&myid);
     source=0;
