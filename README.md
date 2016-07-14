@@ -14,8 +14,8 @@ and high performance computing.
 We've chosen to use Github because we also want to expose you to the basics of version control as well as make our
 materials as easy as possible to access.
 
-**WARNING**: There examples are not all complete and may contain bugs that are intentional for the lab sections. This code
+**WARNING**: These examples are not all complete and may contain bugs that are intentional for the lab sections. This code
 is to show basic examples and for you to work through problems similar to homework. We'll provide comments in the code
-which intentionally incomplete, however bugs we will not note as they are discussion elements for the lab segments.
+which are intentionally incomplete and need additions, however bugs we will **not** note as they are discussion elements for the lab segments during the bootcamp.
 
 Documentation can be found within the repository as well as on the [Github Wiki](https://github.com/WyoARCC/bootcamps/wiki)
