@@ -1,3 +1,9 @@
+/* 
+ * Code written in C with OpenMP directives to compute the sum of two arrays. 
+ * This will be done in both a sequential and parallel manner and the timings compared. 
+ * To be used in ARCC Bootcamp at the University of Wyoming. 
+ */
+ 
 #include <stdio.h>
 #include <omp.h>
 
