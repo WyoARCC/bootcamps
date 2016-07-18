@@ -1,5 +1,5 @@
 /*
- * This is C code to find the sum of elements in a column of a 2D matrix using OpenMP.
+ * (Incomplete) C code to find the sum of elements in a column of a 2D matrix using OpenMP.
  * Concepts such as private and shared variables along with reduction clauses will be introduced. 
  * ARCC Bootcamps, University of Wyoming
  *
@@ -41,16 +41,12 @@ int main() {
 	
 	// Defining a solution 1D array which will store the sum of all elements in a column
 	float column_sum[COLS];
-
-	// A temp variable which will store the sum of elements in each column of 'matrix'
-	float sum = 0.0;
 	
-// By default all variables defined outside a parallel region are shared amongst all threads. 
-// Making 'j' a private variable will ensure that each thread gets its own value.
-#pragma omp parallel private(j)
+// < INSERT '#pragma' directive here... >
 	for(j = 0;j < COLS;j++)	 // Traverse across the matrix
 	{
-// The 'reduction' clause takes in the operator and the variable it is operating on. 
+		float sum = 0.0;
+// < INSERT another '#pragma' directive here... >
 #pragma omp parallel for reduction(+:sum)
 		for(i = 0;i < ROWS;i++)  // Traverse down the above column
 		{
@@ -58,7 +54,6 @@ int main() {
 			sum += matrix[i][j];	
 		}
 		column_sum[j] = sum;	// Assigning the final value to column_sum
-		sum = 0.0;	// Need to ensure that the sum is reset to 0
 	}
 	
 	// Printing out the elements of column_sum
