@@ -19,3 +19,8 @@ is to show basic examples and for you to work through problems similar to homewo
 which are intentionally incomplete and need additions, however bugs we will **not** note as they are discussion elements for the lab segments during the bootcamp.
 
 Documentation can be found within the repository as well as on the [Github Wiki](https://github.com/WyoARCC/bootcamps/wiki)
+
+**Clone This Repo**  
+```bash
+git clone https://github.com/WyoARCC/bootcamps
+```
