@@ -47,7 +47,6 @@ int main() {
 	{
 		float sum = 0.0;
 // < INSERT another '#pragma' directive here... >
-#pragma omp parallel for reduction(+:sum)
 		for(i = 0;i < ROWS;i++)  // Traverse down the above column
 		{
 			// C syntax for sum = sum + matrix[i][j]
