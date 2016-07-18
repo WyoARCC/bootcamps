@@ -14,8 +14,8 @@
 #include <omp.h>
 
 //Operating with a square matrix for simplicity
-#define ROWS 10 
-#define COLS 10
+#define ROWS 6
+#define COLS 6
 
 int main() {
 	// We first need to seed our random number generator to get a truly random sequence. 
@@ -34,9 +34,9 @@ int main() {
 		{
 			//We also have to tell the compiler to store it as a float instead of an integer
 			matrix[i][j] = (float)rand()/RAND_MAX;
-			// printf("%f\t", matrix[i][j]);
+			printf("%f\t", matrix[i][j]);
 		}
-		// printf("\n");
+		printf("\n");
 	}
 	
 	// Defining a solution 1D array which will store the sum of all elements in a column
