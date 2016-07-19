@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <string.h>
 #include "mpi.h"
 
-main(int argc, char *argv[]){
+int main(int argc, char *argv[]){
 
     int my_rank; // rank of process
     int p;  //Number of provesses
@@ -18,7 +19,7 @@ main(int argc, char *argv[]){
     MPI_Comm_size(MPI_COMM_WORLD, &p);
 
     if (my_rank != 0) {
-        sprintf(message, "Greetings form process %d",my_rank);
+        sprintf(message, "Greetings from process %d",my_rank);
     	dest = 0;
     	MPI_Send(message, strlen(message)+1, MPI_CHAR, dest, tag, MPI_COMM_WORLD);
     }
@@ -30,4 +31,5 @@ main(int argc, char *argv[]){
     }
 
     MPI_Finalize();
+    return 0;
 }
