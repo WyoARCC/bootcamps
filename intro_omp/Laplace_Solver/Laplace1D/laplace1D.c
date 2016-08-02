@@ -16,7 +16,7 @@ int main()
 {
 	// Defined tolerance 
 	double tol = 1E-4;
-	// Temp variables to store arror and difference
+	// Temp. variables to store error and difference
 	double err = 0.0;
 	double diff = 0.0;
 	
