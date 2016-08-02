@@ -2,7 +2,7 @@
  * Program to solve Laplace 1D equation with simple point Jacobi equation
  * Parallel version with OpenMP
  * Written at ARCC, University of Wyoming
- *
+ * (Compile with -fopenmp and -lm flag!)
  */
 
 #include <stdio.h> 
