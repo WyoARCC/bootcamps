@@ -131,7 +131,7 @@ int main()
 	if(iter >= max_iter)
 		printf("WARNING: Maximum iterations reached\n");
 
-	 //Printing final update of solution
+	// Printing final update of solution
 	printf("Solution reached after %6d iterations with error: %12.6e \n", err, iter);
 
 	// Freeing memory for dynamically allocated 2D matrices (opposite of allocating)
