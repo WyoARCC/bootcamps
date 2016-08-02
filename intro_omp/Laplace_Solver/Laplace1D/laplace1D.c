@@ -81,7 +81,7 @@ int main()
 		iter++;
 
 		// Uncomment the following piece of code for debugging purposes
-		// It will print the vactors after each iteration 	
+		// It will print the vectors after each iteration 	
 		/*
 		// Print vector after each iteration]
 		printf("After iteration %5d...\n", iter);
