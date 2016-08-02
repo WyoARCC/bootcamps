@@ -2,7 +2,7 @@
  * Program to solve Laplace 1D equation with simple point Jacobi iterative solver
  * Serial version
  * Written at ARCC, University of Wyoming. 
- *
+ * (Compile with -lm flag)
  */
 
 #include <stdio.h> 
