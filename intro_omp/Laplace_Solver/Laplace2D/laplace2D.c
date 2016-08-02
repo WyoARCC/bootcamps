@@ -118,11 +118,12 @@ int main()
 			printf("\n");
 		}
 		printf("\n");
-
-		// Print error after every 10 iterations to observe convergence
-		if(iter % 10 == 0)
-			printf("Iteration %5d, Error = %12.6e\n", iter, err);
 		*/
+		
+		// Print error after every 20 iterations to observe convergence
+		if(iter % 20 == 0)	// Can change 20 to any number as necessary
+			printf("Iteration %5d, Error = %12.6e\n", iter, err);
+		
 
 	} while ((err > tol) && (iter < max_iter));
 
