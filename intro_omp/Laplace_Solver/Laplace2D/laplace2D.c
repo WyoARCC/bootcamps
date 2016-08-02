@@ -24,7 +24,7 @@ int main()
 	int max_iter = 10000;
 	int iter = 0;
 
-	// Vectors storing previous and next values
+	// Matrices storing previous and next values
 	double **u_old;
 	double **u_new;
 
@@ -102,7 +102,7 @@ int main()
 			}
 		}
 
-		// Increment coutner variable
+		// Increment iteration counter variable
 		iter++;
 
 		// Uncomment following code to print matrix after each iteration
