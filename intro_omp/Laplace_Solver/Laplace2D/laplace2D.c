@@ -2,7 +2,7 @@
  * Program for a Laplace 2D solver using a Jacobi simple point iterator
  * Serial version
  * Written at ARCC, University of Wyoming
- *
+ * (Compile with -lm flag!)
  */
 
 #include <stdio.h> 
