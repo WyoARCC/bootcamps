@@ -42,7 +42,7 @@ int main() {
 
 // By default all variables outside a parallel region are shared amongst all threads 
 // Making 'i' a private variable will ensure that each thread gets its own value
-#pragma omp parallel private(i)
+#pragma omp parallel for private(i)
 	for(i = 0;i < ROWS;i++)
 	{
 		int temp_sum = 0;
