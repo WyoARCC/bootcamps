@@ -40,7 +40,7 @@ int main()
 	u_old = (double*)malloc(SIZE*sizeof(double));
 	u_new = (double*)malloc(SIZE*sizeof(double));
 
-	// Initializing the central elements to be 0.0
+	// Initializing the central elements to be guess values
 	// (Can also paralleize the initialization process)
 	for(i = 0;i < SIZE;i++)
 	{
