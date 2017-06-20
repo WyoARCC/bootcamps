@@ -25,6 +25,7 @@
 [OpenACC Programming]
 
 [Message Passing Interface (MPI)]
-  Standards:                    https://www.mpi-forum.org
-  ANL Guides:					https://www.mpich.org/documentation/guides
+  Standards:            https://www.mpi-forum.org
+  ANL Guides:					  https://www.mpich.org/documentation/guides
   LLNL Tutorial:				https://computing.llnl.gov/tutorials/mpi/
+  Comprehensive Guide:  http://mpitutorial.com/tutorials/
