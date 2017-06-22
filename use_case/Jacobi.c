@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 // Defining a maximum number of iterations 
-#define MAX_ITER 200
-// Size of sample space i.e. 10x10
-#define SIZE 10 
+#define MAX_ITER 2000
+// Size of sample space i.e. 100x100
+#define SIZE 100
 
 // Steady state boundary value
 #define BOUND_VAL 1.0
@@ -12,15 +13,29 @@
 #define INITIAL_VAL 0.0
 
 // Define a tolerance based on requirements
-#define TOL 1e-4
+#define TOL 1E-4
 
 int main() {
 
 	// Initiallizing two square matrices to model the heat mesh
-	float T[SIZE][SIZE];
-	float Ts[SIZE][SIZE];
+	double **T;
+	double **Ts;
 
 	int i, j;
+
+	// Dynamic memory allocation for two 2D matrices of given size
+	printf("Allocating %ld bytes for matrices... \n",sizeof(double)*(SIZE*SIZE)*2);
+	
+	//First allocating the space for number of rows
+	T = (double**)malloc(SIZE*sizeof(double));
+	Ts = (double**)malloc(SIZE*sizeof(double));
+	// Allocating the space for number of elements in each row i.e. columns
+	for(i=0; i<SIZE; i++)
+	{
+		T[i] = (double*)malloc(SIZE*sizeof(double));
+		Ts[i] = (double*)malloc(SIZE*sizeof(double));
+	}
+	printf("Done.\n");
 
 	// Populating the matrices which will simulate the mesh
 	for(i=0; i<SIZE; i++)
@@ -41,7 +56,8 @@ int main() {
 	}
 
 	int iter = 0;
-	float err;
+	double err;
+	printf("Starting Jacobi iterations...\n");
 	// Starting the iterations to propagate towards steady state
 	while(iter<MAX_ITER) 
 	{
@@ -56,8 +72,11 @@ int main() {
 		// Break out of loop after reaching tolerance limits
 		break;
 	}
-	printf("Number of iterations required to reach convergence: %d\n",iter);
+	printf("Number of iterations: %d with error: %f\n",iter,err);
 	
+	if(iter>=MAX_ITER)
+		printf("WARNING: Maximum iterations reached\n");
+
 	// Writing data values into a text file for plotting
 	FILE *f = fopen("TempEq.txt","w+");
 	for(i=0;i<SIZE;i++)
@@ -69,6 +88,17 @@ int main() {
 		fprintf(f,"\n");
 	}
 	fclose(f);
+
+	// Deallocating memory from the dynamic arrays
+	printf("Deallocating memory from matrices... \n");
+	for(i=SIZE-1; i>=0; i--)
+	{
+		free(T[i]);
+		free(Ts[i]);
+	}
+	free(T);
+	free(Ts);
+	printf("Done\n");
 
 	return 0;
 }
